@@ -1,3 +1,7 @@
+import DicaModel from "../models/DicaModel.js";
+import DatabaseMetodos from "../utils/DatabaseMetodos.js";
+
+
 class Dicas {
     static rotas(app) {
 
