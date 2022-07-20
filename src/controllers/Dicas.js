@@ -6,7 +6,14 @@ class Dicas {
     static rotas(app) {
 
         app.get("/tips", (req, res) => {
-            res.send("Devolve dica aleatoria")
+            const response = DatabaseMetodos.devolveDica()
+            res.status(200).json(response)
+        })
+
+        app.post("/create", (req, res) => {
+            const dica = new DicaModel(...Object.values(req.body))
+            const response = DatabaseMetodos.gravaDica(dica)
+            res.status(201).json(response)
         })
 
     }
