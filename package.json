@@ -1,0 +1,25 @@
+{
+  "name": "rota",
+  "version": "1.0.0",
+  "description": "Projeto rota sprint: modulo4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Julianaha/node-rotas.git"
+  },
+  "keywords": [],
+  "author": "Julianaha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Julianaha/node-rotas/issues"
+  },
+  "homepage": "https://github.com/Julianaha/node-rotas#readme",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
