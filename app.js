@@ -11,4 +11,6 @@ app.listen(port, () => {
     console.log(`Servidor encontrado neste endereço http://localhost:${port}`)
 })
 
+app.use(express.json())
+
 Dicas.rotas(app)
