@@ -7,7 +7,7 @@ class DatabaseMetodos {
     }
 
     static  devolveDica(){
-        return Database.Dicas
+        return Database.Dicas[Math.floor(Math.random() * Database.Dicas.length)]
     }
 }
 
