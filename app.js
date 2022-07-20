@@ -1,5 +1,6 @@
 import express from "express"
 import * as dotenv from "dotenv"
+import Dicas from "./src/controllers/Dicas.js"
 
 dotenv.config()
 
@@ -9,3 +10,5 @@ const app = express()
 app.listen(port, () => {
     console.log(`Servidor encontrado neste endereço http://localhost:${port}`)
 })
+
+Dicas.rotas(app)
