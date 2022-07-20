@@ -1,7 +1,7 @@
 import { Database } from "../infra/Database.js"
 
 class DatabaseMetodos {
-    static gravaDica(){
+    static gravaDica(dica){
         Database.Dicas = [...Database.Dicas, dica]
         return Database.Dicas
     }
